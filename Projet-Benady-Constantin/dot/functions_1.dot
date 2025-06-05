@@ -1,0 +1,15 @@
+digraph G {
+n15 [label="main, int", shape=invtrapezium, color=blue];
+n16 [label="BLOC", shape=ellipse];
+n17 [label="printd", shape=septagon];
+n18 [label="ARGS", shape=box];
+n19 [label="10", shape=ellipse];
+n18 -> n19;
+n17 -> n18;
+n16 -> n17;
+n20 [label="RETURN", shape=trapezium, color=blue];
+n21 [label="0", shape=ellipse];
+n20 -> n21;
+n16 -> n20;
+n15 -> n16;
+}

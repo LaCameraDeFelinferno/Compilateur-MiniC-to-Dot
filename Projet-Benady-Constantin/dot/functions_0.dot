@@ -1,0 +1,31 @@
+digraph G {
+n0 [label="fact, int", shape=invtrapezium, color=blue];
+n1 [label="BLOC", shape=ellipse];
+n2 [label="IF", shape=diamond];
+n3 [label="<=", shape=ellipse];
+n4 [label="n", shape=ellipse];
+n3 -> n4;
+n5 [label="1", shape=ellipse];
+n3 -> n5;
+n2 -> n3;
+n6 [label="RETURN", shape=trapezium, color=blue];
+n7 [label="1", shape=ellipse];
+n6 -> n7;
+n2 -> n6;
+n1 -> n2;
+n8 [label="RETURN", shape=trapezium, color=blue];
+n9 [label="*", shape=ellipse];
+n10 [label="n", shape=ellipse];
+n9 -> n10;
+n11 [label="ARGS", shape=box];
+n12 [label="-", shape=ellipse];
+n13 [label="n", shape=ellipse];
+n12 -> n13;
+n14 [label="1", shape=ellipse];
+n12 -> n14;
+n11 -> n12;
+n9 -> n11;
+n8 -> n9;
+n1 -> n8;
+n0 -> n1;
+}
